@@ -1,0 +1,97 @@
+/usr/bin/ld: Warning: alignment 8 of symbol `len' in compress.o is smaller than 32 in decode.o
+decode.o:(.bss+0x0): multiple definition of `fp'
+compress.o:(.bss+0x0): first defined here
+decode.o: In function `bits':
+decode.c:(.text+0xed): multiple definition of `bits'
+compress.o:compress.c:(.text+0x615): first defined here
+decompress.o:(.data+0x0): multiple definition of `filename'
+compress.o:(.data+0x0): first defined here
+decompress.o:(.data+0x8): multiple definition of `bitfile'
+compress.o:(.data+0x8): first defined here
+decompress.o:(.data+0x10): multiple definition of `codefile'
+compress.o:(.data+0x10): first defined here
+decompress.o:(.data+0x18): multiple definition of `newfile'
+compress.o:(.data+0x18): first defined here
+decompress.o:(.bss+0x0): multiple definition of `fp'
+compress.o:(.bss+0x0): first defined here
+decompress.o:(.bss+0x20): multiple definition of `count'
+compress.o:(.bss+0x20): first defined here
+decompress.o:(.bss+0x9c60): multiple definition of `heap'
+compress.o:(.bss+0x9c60): first defined here
+decompress.o:(.bss+0x138a0): multiple definition of `dad'
+compress.o:(.bss+0x138a0): first defined here
+decompress.o:(.data+0x20): multiple definition of `len'
+compress.o:(.data+0x20): first defined here
+decompress.o: In function `make_tree':
+decompress.c:(.text+0x176): multiple definition of `make_tree'
+decode.o:decode.c:(.text+0x13a): first defined here
+decompress.o: In function `decode':
+decompress.c:(.text+0x2d5): multiple definition of `decode'
+decode.o:decode.c:(.text+0x35a): first defined here
+decompress.o: In function `deallocate':
+decompress.c:(.text+0x403): multiple definition of `deallocate'
+decode.o:decode.c:(.text+0x42c): first defined here
+decompress.o: In function `get_arrays':
+decompress.c:(.text+0xa9): multiple definition of `get_arrays'
+decode.o:decode.c:(.text+0x297): first defined here
+fp.o: In function `main':
+fp.c:(.text+0x0): multiple definition of `main'
+decode.o:decode.c:(.text+0x0): first defined here
+huffman.o:(.bss+0x0): multiple definition of `count'
+compress.o:(.bss+0x20): first defined here
+/usr/bin/ld: Warning: size of symbol `count' changed from 40000 in compress.o to 208 in huffman.o
+huffman.o:(.bss+0xe0): multiple definition of `heap'
+compress.o:(.bss+0x9c60): first defined here
+/usr/bin/ld: Warning: size of symbol `heap' changed from 40000 in compress.o to 208 in huffman.o
+huffman.o:(.bss+0x1c0): multiple definition of `dad'
+compress.o:(.bss+0x138a0): first defined here
+/usr/bin/ld: Warning: size of symbol `dad' changed from 40000 in compress.o to 208 in huffman.o
+/usr/bin/ld: Warning: alignment 8 of symbol `len' in compress.o is smaller than 32 in huffman.o
+huffman.o:(.bss+0x290): multiple definition of `num_bits'
+decode.o:(.bss+0x8): first defined here
+huffman.o: In function `main':
+huffman.c:(.text+0x0): multiple definition of `main'
+decode.o:decode.c:(.text+0x0): first defined here
+huffman.o: In function `get_count':
+huffman.c:(.text+0x162): multiple definition of `get_count'
+compress.o:compress.c:(.text+0x161): first defined here
+huffman.o: In function `get_heap':
+huffman.c:(.text+0x1f1): multiple definition of `get_heap'
+compress.o:compress.c:(.text+0x2d6): first defined here
+huffman.o: In function `construct':
+huffman.c:(.text+0x35c): multiple definition of `construct'
+compress.o:compress.c:(.text+0x446): first defined here
+huffman.o: In function `encode':
+huffman.c:(.text+0x498): multiple definition of `encode'
+compress.o:compress.c:(.text+0x54a): first defined here
+huffman.o: In function `downheap':
+huffman.c:(.text+0x27d): multiple definition of `downheap'
+compress.o:compress.c:(.text+0x367): first defined here
+huffman.o: In function `bits':
+huffman.c:(.text+0x615): multiple definition of `bits'
+compress.o:compress.c:(.text+0x615): first defined here
+xpm_main.o:(.data+0x0): multiple definition of `filename'
+compress.o:(.data+0x0): first defined here
+xpm_main.o:(.data+0x8): multiple definition of `bitfile'
+compress.o:(.data+0x8): first defined here
+xpm_main.o:(.data+0x10): multiple definition of `codefile'
+compress.o:(.data+0x10): first defined here
+xpm_main.o:(.data+0x18): multiple definition of `newfile'
+compress.o:(.data+0x18): first defined here
+xpm_main.o:(.bss+0x0): multiple definition of `fp'
+compress.o:(.bss+0x0): first defined here
+xpm_main.o:(.bss+0x20): multiple definition of `count'
+compress.o:(.bss+0x20): first defined here
+/usr/bin/ld: Warning: size of symbol `count' changed from 208 in compress.o to 40000 in xpm_main.o
+xpm_main.o:(.bss+0x9c60): multiple definition of `heap'
+compress.o:(.bss+0x9c60): first defined here
+/usr/bin/ld: Warning: size of symbol `heap' changed from 208 in compress.o to 40000 in xpm_main.o
+xpm_main.o:(.bss+0x138a0): multiple definition of `dad'
+compress.o:(.bss+0x138a0): first defined here
+/usr/bin/ld: Warning: size of symbol `dad' changed from 208 in compress.o to 40000 in xpm_main.o
+xpm_main.o:(.data+0x20): multiple definition of `len'
+compress.o:(.data+0x20): first defined here
+xpm_main.o: In function `main':
+xpm_main.c:(.text+0x0): multiple definition of `main'
+decode.o:decode.c:(.text+0x0): first defined here
+collect2: ld returned 1 exit status
